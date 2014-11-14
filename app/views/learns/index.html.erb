@@ -1,0 +1,21 @@
+<!-- <h1>Learns#index</h1> -->
+<!-- <p>Find me in app/views/learns/index.html.erb</p> -->
+
+<div class="text-center">
+  <h1>Find a GitHub user:</h1>
+
+  <%= form_tag("javascript:void(0)", class: "getInfo") do %>
+
+  <p>
+    <%= label_tag(:repoName)%>
+    <%= text_field_tag(:repoName, nil, autofocus: true)%>
+  </p>
+
+    <%= submit_tag("Submit", class: "btn btn-primary ")%>
+  <% end %>
+  <br>
+
+</div>
+
+<div class="userData">
+</div>
